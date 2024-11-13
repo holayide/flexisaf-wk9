@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Week9: React Testing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This week involved learning React testing. The React Testing Library is a tool that helps us test React applications by simulating user interactions and verifying that components behave as expected.
 
-## Available Scripts
+## Types of Testing
 
-In the project directory, you can run:
+There are different types of testing commonly used in software development:
 
-### `npm start`
+### Unit Testing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Unit testing involves testing individual components or functions in isolation. This type of test focuses on small, specific parts of the application to ensure they perform as expected. For example, a unit test might verify that a function correctly returns a calculated result or that a component renders properly given specific props.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Integration Testing
 
-### `npm test`
+Integration testing examines how multiple components or modules work together. Instead of testing a single function or component, it checks how they integrate and interact with each other. This type of test is useful for detecting issues that may arise when components are combined in the same context.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### End-to-End (E2E) Testing
 
-### `npm run build`
+End-to-End testing simulates real user scenarios and tests the entire application flow from start to finish. It ensures that various parts of the application work together as a whole, replicating actual user actions like navigating through pages or submitting forms. E2E tests are often used to catch issues that may be missed in unit or integration tests.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Why We Test
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+We test our applications to verify that the functionality is working as intended. Testing helps us ensure that all parts of the React app perform as expected, providing a reliable and predictable experience for users.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Importance of Testing
 
-### `npm run eject`
+- To catch bugs early
+- Increases confidence in the aplication
+- Speeds up QA time
+- Can serve as documentation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## What I Worked On
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I worked on a simple counter component, which includes three main actions:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Increment: Increases the count value by 1.
+- Decrement: Decreases the count value by 1.
+- Reset: Resets the count value to 0.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Tests
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The buttons were tested to ensure they work as intended. Each button was clicked programmatically, and the resulting count was checked to confirm that it updated correctly, verifying that each button’s functionality aligns with expectations.
