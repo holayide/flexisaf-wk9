@@ -40,3 +40,5 @@ I worked on a simple counter component, which includes three main actions:
 ## Tests
 
 The buttons were tested to ensure they work as intended. Each button was clicked programmatically, and the resulting count was checked to confirm that it updated correctly, verifying that each button’s functionality aligns with expectations.
+
+View live link: [Click here](https://lucky-mousse-4433e9.netlify.app/)
